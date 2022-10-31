@@ -48,6 +48,7 @@ impl GLAreaBackend {
     }
 }
 
+#[derive(Clone)]
 pub struct GtkFacade {
     context: Rc<Context>,
 }
@@ -73,4 +74,3 @@ impl Facade for GtkFacade {
         &self.context
     }
 }
-
